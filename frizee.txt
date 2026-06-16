@@ -6050,4 +6050,54 @@ function CheckLevel()
             CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734);
             CFrameMon = CFrame.new(61738.3984375, 64.207321166992, 1433.8375244141);
             if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
-                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(61163.8515625, 11.6796875, 1819.7
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(61163.8515625, 11.6796875, 1819.7841796875));
+            end
+        elseif ((v197 == 10) or (v197 <= 474) or (SelectMonster == "God's Guard")) then
+            Ms = "God's Guard";
+            NameQuest = "SkyExp1Quest";
+            QuestLv = 1;
+            NameMon = "God's Guard";
+            CFrameQ = CFrame.new(- 4721.8603515625, 845.30297851563, - 1953.8489990234);
+            CFrameMon = CFrame.new(- 4628.0498046875, 866.92877197266, - 1931.2352294922);
+            if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(- 4607.82275, 872.54248, - 1667.55688));
+            end
+        elseif ((v197 == 475) or (v197 <= 524) or (SelectMonster == "Shanda")) then
+            Ms = "Shanda";
+            NameQuest = "SkyExp1Quest";
+            QuestLv = 2;
+            NameMon = "Shanda";
+            CFrameQ = CFrame.new(- 7863.1596679688, 5545.5190429688, - 378.42266845703);
+            CFrameMon = CFrame.new(- 7685.1474609375, 5601.0751953125, - 441.38876342773);
+            if (_G.AutoLevel and ((CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000)) then
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(- 7894.6176757813, 5547.1416015625, - 380.29119873047));
+            end
+        elseif ((v197 == 525) or (v197 <= 549) or (SelectMonster == "Royal Squad")) then
+            Ms = "Royal Squad";
+            NameQuest = "SkyExp2Quest";
+            QuestLv = 1;
+            NameMon = "Royal Squad";
+            CFrameQ = CFrame.new(- 7903.3828125, 5635.9897460938, - 1410.923828125);
+            CFrameMon = CFrame.new(- 7654.2514648438, 5637.1079101563, - 1407.7550048828);
+        elseif ((v197 == 550) or (v197 <= 624) or (SelectMonster == "Royal Soldier")) then
+            Ms = "Royal Soldier";
+            NameQuest = "SkyExp2Quest";
+            QuestLv = 2;
+            NameMon = "Royal Soldier";
+            CFrameQ = CFrame.new(- 7903.3828125, 5635.9897460938, - 1410.923828125);
+            CFrameMon = CFrame.new(- 7760.4106445313, 5679.9077148438, - 1884.8112792969);
+        elseif ((v197 == 625) or (v197 <= 649) or (SelectMonster == "Galley Pirate")) then
+            Ms = "Galley Pirate";
+            NameQuest = "FountainQuest";
+            QuestLv = 1;
+            NameMon = "Galley Pirate";
+            CFrameQ = CFrame.new(5258.2788085938, 38.526931762695, 4050.044921875);
+            CFrameMon = CFrame.new(5557.1684570313, 152.32717895508, 3998.7758789063);
+        elseif ((v197 >= 650) or (SelectMonster == "Galley Captain")) then
+            Ms = "Galley Captain";
+            NameQuest = "FountainQuest";
+            QuestLv = 2;
+            NameMon = "Galley Captain";
+            CFrameQ = CFrame.new(5258.2788085938, 38.526931762695, 4050.044921875);
+            CFrameMon = CFrame.new(5677.6772460938, 92.786109924316, 4966.6323242188);
+        end
