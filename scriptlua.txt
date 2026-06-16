@@ -1,5 +1,5 @@
 -- local function scary()
---     warn("❌ This script must only be executed from the offical Bear hud loader")
+--     warn("❌ This script must only be executed from the offical duydo hub loader")
 --         return
 --     end
 
@@ -36,7 +36,7 @@
 -- end
 -- _G._secondaryData = nil
 -- _G.__userKey = nil
-print("✅ Security verification passed. Loading Bear hud...")
+print("✅ Security verification passed. Loading duydo hub...")
 -- FIX XÁC ĐỊNH SEA CHO CẢ SERVER THƯỜNG VÀ VIP
 local function detectSea()
     local placeId = game.PlaceId
@@ -120,7 +120,7 @@ spawn(function()
     wait(3)
     local sea = World1 and "Biển 1" or World2 and "Biển 2" or World3 and "Biển 3" or "Không xác định"
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Bear Hub",
+        Title = "duydo Hub",
         Text = "Đang chạy ở " .. sea,
         Duration = 3
     })
@@ -137,7 +137,7 @@ if Update:LoadAnimation() then
 	Update:Loaded();
 end;
 local Library = Update:Window({
-	SubTitle = "by Quang Huy",
+	SubTitle = "by duydo ",
 	Size = UDim2.new(0, 450, 0, 300),
 	TabWidth = 140
 });
