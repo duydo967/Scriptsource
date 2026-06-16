@@ -441,14 +441,14 @@ _G.Settings = {
 };
 (getgenv()).Load = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfolder("Bear hud") then
-			makefolder("Bear hud");
+		if not isfolder("duydo hud") then
+			makefolder("duydo hud");
 		end;
-		if not isfolder("Bear hud/Blox Fruits/") then
-			makefolder("Bear hud/Blox Fruits/");
+		if not isfolder("duydo hud/Blox Fruits/") then
+			makefolder("duydo hud/Blox Fruits/");
 		end;
-		if not isfile(("Bear Hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
-			writefile("Bear hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(_G.Settings));
+		if not isfile(("duydo Hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
+			writefile("duydo hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(_G.Settings));
 		else
 			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Bear hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"));
 			for i, v in pairs(Decode) do
@@ -463,7 +463,7 @@ end;
 (getgenv()).SaveSetting = function()
 	if Update:SaveSettings() then
 		if readfile and writefile and isfile and isfolder then
-			if not isfile(("Bear hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
+			if not isfile(("duydo hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
 				(getgenv()).Load();
 			else
 				local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Bear hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"));
@@ -471,7 +471,7 @@ end;
 				for i, v in pairs(_G.Settings) do
 					Array[i] = v;
 				end;
-				writefile("Bear hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
+				writefile("duydo hud/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
 			end;
 		else
 			return warn("Status : Undetected Executor");
